@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: aliceblue
+        }
+        a:visited{
+            color: tomato;
+        }
+        a:focus{
+            color:yellow;
+        }
+        a:active{
+            background-color: blue;
+        }
+        a:disabled{
+            background-color: black;
+            color: white;
+        }
+        /* Este es un not. Quiere decir que todas los elementos sin ese atributo, van a ejecutar el code*/
+            p:not(#good){
+                background-color: steelblue;
+            }
+            .container p:nth-child(2){
+                color: red; 
+            }
+        </style>
+</head>
+<body>
+    <a href="/">GABS</a>
+    <div>
+        <p>This is </p>
+        <p id="good">Something really good</p>
+    </div>
+    <div class="container">
+        <p>PEEE</p>
+        <p>aaaaaas</p>
+    </div>
+</body>
+</html>
