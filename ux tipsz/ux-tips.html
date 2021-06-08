@@ -1,0 +1,96 @@
+<!--De subida un tiempo, de bajada otro  tiempo-->
+<!--Tiempo de espera-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /*Styles for the first recomendation*/
+        .circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: cadetblue;
+            transition: 1.5s cubic-bezier(0.77, 0, 0.375, 1);
+        }
+        .circle:hover{
+            transform: translateY(120px);
+            transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        /*Styles for second tip*/
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .navbar{
+            display: flex;
+            width: 34%;
+            margin: 23px auto;
+            justify-content: space-between;
+            
+        }
+        .navbar > li{
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 16px;
+        }
+        .navbar li ul{
+            display: block;
+            opacity: 0; 
+            position: absolute;
+            padding: 0;
+            margin-top: 23px;
+            border-radius: 9px;
+            background-color: beige;
+            padding: 7px;
+            transition: opacity 600ms;
+            transition-delay: .7s;
+        }
+        .navbar li > ul > li{
+            border: 1px solid grey;
+            margin: 2px;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .navbar li:hover > ul{
+            opacity: 1;
+            transition: opacity 1000ms;
+            transition-delay: .2s;
+        }
+        .sub-menu{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="/ux tipsz/ux-tips.html">Mujer</a>
+                <ul>
+                    <li><a href="/ux tipsz/ux-tips.html"></a> Zapatos</li>
+                    <li><a href="/ux tipsz/ux-tips.html"></a> Blusas</li>
+                    <li><a href="/ux tipsz/ux-tips.html"></a> Collares
+                        <ul class="sub-menu">
+                            <li> <a href="/disabled.html"> De oro</a></li>
+                            <li> <a href="/pseudo-classes.html"> De plata</a></li>
+                            <li> <a href="/pseudo-elements.html"> De bronce</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+            </li>
+            <li><a href="/">Mujer</a>
+            </li>
+            <li><a href="/">Mujer</a></li>
+        </ul>
+    </nav>
+    <div class="circle"></div>
+</body>
+</html>
