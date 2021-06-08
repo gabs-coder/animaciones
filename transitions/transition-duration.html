@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .container{
+            width: 400px;
+            height: 100px;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #translate:hover .box { /* Esto lo que quiere decir es que cuando se le haga hover al container, los .box se van a agrandar*/
+            transform: translate(23px, 54px);
+            border-radius: 10px;
+        }
+        #scale:hover .box {
+            transform: scale(.28);
+            border-radius: 8px;
+        }
+        #skew:hover .box {
+            transform: skew(180deg);
+        }
+        #rotate:hover .box {
+            transform: rotateX(230deg);
+            transform: rotateY(180deg);
+        }
+        #rotate-origin:hover .box {
+            transform-origin: top left;
+            transform: rotate(45deg);
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #20531c;
+        }
+        .box1{
+            background-color: #20531c;  
+            transition: transform 400ms;
+        }
+        .box2{
+            background-color: #82bbaf;
+            transition: transform 800ms;
+
+        }
+        .box3{
+            background-color: #00885f;
+            transition: transform 1000ms;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div id="translate">
+            <h1> Translate</h1>
+        <div class="container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+        </div>
+        <div id="scale">
+            <h1> Scale</h1>
+            <div class="container">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+        
+                <div class="box box3"></div>
+            </div>
+        </div>
+        <div id="skew">
+            <h1> Skew</h1>
+            <div class="container">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+            </div>
+        </div>
+        <div id="rotate">
+            <h1> Rotate</h1>
+            <div class="container">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+            </div>
+        </div>
+        <div id="rotate-origin">
+            <h1>Rotate with origin</h1>
+            <div class="container">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+            </div>
+        </div>
+         
+    </div>
+
+</body>
+</html>

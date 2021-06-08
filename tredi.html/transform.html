@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            transform-style: preserve-3d;
+            position: relative;
+           /** display: flex;*/
+            border: 2px solid black;
+            width: 500px;
+            height: 130px;
+        /** perspective: 100px; */
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+
+        .item{
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            position: relative;
+        }
+        .front{
+            background: greenyellow;
+        }
+        .back{
+            transform: rotateX(180deg);
+            background: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="item front">
+
+        </div>
+        <div class="item back">
+
+        </div>
+    </div>
+</body>
+</html> 
