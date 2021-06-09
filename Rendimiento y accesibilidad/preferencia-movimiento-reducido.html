@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Ayuda aquí. Para que el cuadradito gire bien por fa.*/
+        @media (prefers-reduced-motion: no-preference){ /*Pueden estar los valores: no-prenference o "reduce"*/
+                .container{
+                    transition: transform 0.5s;
+                    transform-style: preserve-3d;
+                }
+                .card{
+                    backface-visibility: hidden;
+                }
+                .back{
+                    transform: rotateY(180deg);
+                    opacity: 1;
+                }
+            }
+
+            /*Al poner no-preference, todo el codigo de los que necesitan pocas animaciones esta aqui:*/
+            .container:hover .back{
+                opacity: 1;
+            }
+            .container{
+                width: 200px;
+                height: 190px;
+                position: relative;
+                transition: transform 0.5s;
+                transform-style: preserve-3d;
+            }
+            .card{
+                width: 100%;
+                height: 100%;
+                border-radius: 11px;
+                position: absolute;
+                backface-visibility: hidden;
+            }
+            .front{
+                background-color: #30e420;
+            }
+            .back{
+                background-color: #1ac5ae;
+                transform: rotateY(180deg);
+                transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+                z-index: 2;
+                opacity: 0;
+            }
+            /*@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card front"></div>
+        <div class="card back"></div>
+    </div>
+</body>
+</html>

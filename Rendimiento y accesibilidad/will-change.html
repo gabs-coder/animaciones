@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        background-color: powderblue;
+        width: 200px;
+        height: 60px;
+    }
+    .container{
+        display:flex;
+        justify-content: space-around;
+    }
+    .container-good:hover button{
+        transform: translateY(20px);
+    }
+    .better{
+        will-change: transform;
+        transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .container-bad:hover button{
+        margin-top: 20px; 
+    }
+    .worse{
+        will-change: transform;
+        transition: margin-top  700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+   /*El worse hace algo chistoso y es que tiembla al final del hover. Puesto que esta siendo animado por el margin-top
+   y además de eso, está optimizando un poco en la aceleracion del hardware por la propiedad will-change. 
+   Ambas cosas lo hacen temblar un poco al final.*/
+
+</style>
+<body>
+    <!--Will change prepara al computador para que se optimice, puesto que el cambio entre CPU y GPU demora un poco
+    entre el "composite" del render proccess.-->
+    <div class="container">
+        <div class="container-good">
+            <button class="better"></button>
+        </div>
+        <div class="container-bad">
+            <button class="worse"></button>
+        </div>
+    </div>
+</body>
+</html>

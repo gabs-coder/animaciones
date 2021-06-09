@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: 1750ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-delay: 120ms;
+        }
+        .container:hover .item{
+            transform: translateX(992px);
+        }
+    </style>
+</head>
+<body>
+    <!--Create a container as a parent element to avoid "parpadeo" when applying pseudo-classses just like a hover-->
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+    <!--As another UX tip, many of the CSS properties are heavy for the engine to process such as height, width or background-color. However
+    you can instead of using those heavy properties when animating your page, use the easy and not-so-heavy properties. They are 
+    for example: transform and opacity.
+
+    You would rather use them when animating instead of the heavy properties and you can surely accomplish the same 
+    purpose you wanted to accomplish, but even much easier. 
+    
+    See: https://csstriggers.com/. TO se the render TRIGGERS IN CSS (LAYOUT, PAINT, COMPOSITE).
+
+    See also: https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo/ to see how each engine works.
+    -->
+</body>
+</html>
