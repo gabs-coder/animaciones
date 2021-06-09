@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>False</title>
+</head>
+<style>
+    .container:hover .card .face.back{
+        opacity: 1;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        position: relative;
+        margin: 23px auto;
+        width: 200px;
+        height: 200px;
+    }
+    .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 23px;
+        backface-visibility: hidden;
+    }
+    .front{
+        background: aquamarine;
+    }
+    .back{
+        opacity: 0;
+        background-color: powderblue;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face front"></div>
+            <div class="face back"></div>    
+        </div>
+        <div class="card">
+            <div class="face front"></div>
+            <div class="face back"></div>    
+        </div>
+        <div class="card">
+            <div class="face front"></div>
+            <div class="face back"></div>    
+        </div>
+        <div class="card">
+            <div class="face front"></div>
+            <div class="face back"></div>    
+        </div>
+    </div>
+</body>
+</html>
