@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apilando cosas</title>
-    
+    <link rel="stylesheet" href="./dibujos.css">
     <style>
         body{
             margin: 0;
@@ -35,14 +35,12 @@
             z-index: 1;
         }
         .layer-2{
-            background-color: white;
             width: 100%;
             height: 19%;
             top: 88px; 
             z-index: 2;
         }
         .layer-3{
-            background: grey;
             width: 100%;
             height: 64%;
             bottom: 40px;
@@ -59,15 +57,27 @@
 </head>
 <body>
     <div id="container">
-        <!--Upper clouds-->
-        <div class="layer layer-1">
-            <div id="upcl-1" class="upper-clouds"></div>
-            <div id="upcl-2" class="upper-clouds"></div>
-            <div id="upcl-3" class="upper-clouds"></div>
-            <div id="upcl-4" class="upper-clouds"></div>
+        <!--Sun-->
+        <div class="layer layer-1"></div>
+        <div class="layer layer-2">
+            <div class="container-relative">
+                <div id="upcl-1" class="upper-clouds"></div>
+                <div id="upcl-2" class="upper-clouds"></div>
+                <div id="upcl-3" class="upper-clouds"></div>
+                <div id="upcl-4" class="upper-clouds"></div>
+            </div>
         </div>
-        <div class="layer layer-2"></div>
-        <div class="layer layer-3"></div>
+        <!--Underneath clouds-->
+        <div class="layer layer-3">
+            <div class="container-relative">
+                <div class="under-clouds" id="uc2"></div>
+                <div class="under-clouds" id="uc3"></div>
+                <div class="under-clouds" id="uc4"></div>
+                <div class="under-clouds" id="uc5"></div>
+                <div class="under-clouds" id="uc6"></div>
+                <div class="under-clouds" id="uc7"></div>
+            </div>
+        </div>
         <div class="layer layer-4"></div>
     </div>
 </body>

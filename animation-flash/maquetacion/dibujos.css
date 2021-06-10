@@ -1,0 +1,64 @@
+.container-relative{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.upper-clouds{
+    position: absolute; 
+}
+#upcl-1{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: rgb(111,131,213);
+    width: 134px;
+    height: 53px;
+}
+#upcl-2{
+    left: 12px;
+    bottom: 21px;
+    border-radius: 32px;
+    background: rgb(211,231,213);
+    width: 34px;
+    height: 73px;
+}
+#upcl-3{
+    right: 14px;
+    bottom: 12px;
+    border-radius: 32px;
+    background: white;
+    width: 124px;
+    height: 93px;
+}
+#upcl-4{
+    left: 102px;
+    top: 2px;
+    border-radius: 50%;
+    background: white;
+    width: 84px;
+    height: 43px;
+}
+
+/*Underneath clouds*/
+.under-clouds{
+    background: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+/*First cloud*/
+#uc1{
+    left: 58px;
+    top: 68px;
+}
+#uc2{
+    left: 78px;
+    top: 38px;
+}
+#uc3{
+    left:0px;
+    top: 44px;
+}
+/*Second Cloud*/
