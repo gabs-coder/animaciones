@@ -1,44 +1,37 @@
-.container-relative{
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
+/*Upper clouds*/
 .upper-clouds{
-    position: absolute; 
+    background: #ffffffb5;
+    border-radius: 75%;
+    width: 33%;
+    height: 33%;
+    position: absolute;
 }
+/*First cloud*/
 #upcl-1{
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 12px;
-    background: rgb(111,131,213);
-    width: 134px;
-    height: 53px;
+    bottom: 10;
+    left: 154;
 }
 #upcl-2{
-    left: 12px;
-    bottom: 21px;
-    border-radius: 32px;
-    background: rgb(211,231,213);
-    width: 34px;
-    height: 73px;
+    bottom: 10;
+    left: 54;
 }
 #upcl-3{
-    right: 14px;
-    bottom: 12px;
-    border-radius: 32px;
-    background: white;
-    width: 124px;
-    height: 93px;
+    bottom: 33;
+    left: 85;
 }
+/*Second cloud*/
 #upcl-4{
-    left: 102px;
-    top: 2px;
-    border-radius: 50%;
-    background: white;
-    width: 84px;
-    height: 43px;
+    right: 85;
+    bottom: 33;
 }
+#upcl-5{
+    right: 54;
+}
+#upcl-6{
+    right: 134;
+}
+
+/*First cloud*/
 
 /*Underneath clouds*/
 .under-clouds{
@@ -62,3 +55,53 @@
     top: 44px;
 }
 /*Second Cloud*/
+#uc4{
+    bottom: 30;
+    right: 154px; 
+}
+#uc5{
+    bottom: 30;
+    right: 100px;
+}
+#uc6{
+    right: 126;
+    bottom: 50;
+}
+/*Third cloud*/
+#uc7{
+    left: 0;
+    right: 0;
+    margin: 60 auto;
+}
+#uc8{
+   top: 98px;
+   right: 248px;
+}
+#uc9{
+    bottom: 158;
+    left: 260;
+}
+
+
+/* Globes */
+.ballon{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#globe1{
+    background-color: brown;
+    top: 0; 
+    left: 27;
+}
+#globe2{
+    background-color: red;
+    top: 90;
+    right: 27;
+}
+#globe3{
+    left: 245;
+    top: 0;
+    background-color: green;
+}
