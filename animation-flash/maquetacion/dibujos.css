@@ -1,11 +1,28 @@
 /*Upper clouds*/
+.layer-1{
+    animation: clouding-reverse 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate;
+}
 .upper-clouds{
     background: #ffffffb5;
     border-radius: 75%;
     width: 33%;
     height: 33%;
     position: absolute;
+    animation-name: clouding-reverse;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes clouding-reverse{
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(34px, 0);
+    }
+}
+
 /*First cloud*/
 #upcl-1{
     bottom: 10;
@@ -41,22 +58,27 @@
     position: absolute;
 
     animation-name: clouding;
-    animation-duration: 14s;
+    animation-duration: 8s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
     animation-iteration-count: infinite;
 }
 @keyframes clouding{
     0%{
-        left: inherit;
+        transform: translate(23px, 0)
     }
     25%{
-        left: 54px;
+        transform: translate(0, -30px)
     }
     50%{
-        left: -54 
+        transform: translate(-90px, 60px)
     }
     75%{
-        bottom: 24px;
+        transform: translate(-90px, -60px);
+    }
+    100%{
+        transform: translate(initial, initial);
+        transform: perspective(initial);
+        transform: skew(initial);
     }
 }
 
@@ -109,15 +131,16 @@
     position: absolute; 
     animation-name: globing;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @keyframes globing{
     from{
-        top: 0;
+        transform: translate(0, 0);
     }
     to{
-        top: 20px;
+        transform: translate(-30px, -280px);
     }
 
 }
