@@ -31,7 +31,6 @@
     right: 134;
 }
 
-/*First cloud*/
 
 /*Underneath clouds*/
 .under-clouds{
@@ -40,7 +39,27 @@
     width: 20%;
     height: 20%;
     position: absolute;
+
+    animation-name: clouding;
+    animation-duration: 14s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+    animation-iteration-count: infinite;
 }
+@keyframes clouding{
+    0%{
+        left: inherit;
+    }
+    25%{
+        left: 54px;
+    }
+    50%{
+        left: -54 
+    }
+    75%{
+        bottom: 24px;
+    }
+}
+
 /*First cloud*/
 #uc1{
     left: 58px;
@@ -82,16 +101,28 @@
     left: 260;
 }
 
-
 /* Globes */
 .ballon{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: absolute; 
+    animation-name: globing;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+@keyframes globing{
+    from{
+        top: 0;
+    }
+    to{
+        top: 20px;
+    }
+
 }
 #globe1{
-    background-color: brown;
+    background-color: greenyellow;
     top: 0; 
     left: 27;
 }
@@ -104,4 +135,19 @@
     left: 245;
     top: 0;
     background-color: green;
+}
+#globe4{
+    top: 9;
+    right: 178;
+    background: teal;
+}
+.canasta{
+    height: 34px;
+    width: 32px;
+    position: absolute;
+    bottom: -30;
+    background: brown;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
