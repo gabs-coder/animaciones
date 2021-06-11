@@ -1,3 +1,55 @@
+body{
+    margin: 0;
+    height: 100vh; /*Todo lo que estamos viendo en ese momento = 100vh*/
+    width: 100%;
+    display: grid;
+    place-items: center; /*Ultimas dos propiedades ayudan a que el contenido sea centrado vertical y horizontalmente*/
+}
+#container{
+    border: 8px solid black;
+    border-radius: 35px;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: skyblue;
+    box-shadow: 0 0 13px 3px black;
+}
+.layer{
+    position:absolute;
+}
+.layer-1{
+    border-radius: 50%;
+    background-color: yellow;
+    height: 25%;
+    width: 22%;
+    left: 24px;
+    top: 15px;
+    z-index: 1;
+}
+.layer-2{
+    width: 100%;
+    height: 19%;
+    top: 88px; 
+    z-index: 2;
+}
+.layer-3{
+    width: 100%;
+    height: 64%;
+    bottom: 40px;
+    z-index: 3;
+}
+.layer-4{
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    z-index: 4;
+}
+
+
+
+
+
+
 /*Upper clouds*/
 .layer-1{
     animation: clouding-reverse 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate;

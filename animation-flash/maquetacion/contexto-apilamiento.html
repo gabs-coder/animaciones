@@ -5,104 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apilando cosas</title>
     <link rel="stylesheet" href="./dibujos.css">
-    <style>
-        body{
-            margin: 0;
-            height: 100vh; /*Todo lo que estamos viendo en ese momento = 100vh*/
-            width: 100%;
-            display: grid;
-            place-items: center; /*Ultimas dos propiedades ayudan a que el contenido sea centrado vertical y horizontalmente*/
-        }
-        #container{
-            border: 8px solid black;
-            border-radius: 35px;
-            position: relative;
-            width: 800px;
-            height: 500px;
-            background-color: skyblue;
-            box-shadow: 0 0 13px 3px black;
-        }
-        .layer{
-            position:absolute;
-        }
-        .layer-1{
-            border-radius: 50%;
-            background-color: yellow;
-            height: 25%;
-            width: 22%;
-            left: 24px;
-            top: 15px;
-            z-index: 1;
-        }
-        .layer-2{
-            width: 100%;
-            height: 19%;
-            top: 88px; 
-            z-index: 2;
-        }
-        .layer-3{
-            width: 100%;
-            height: 64%;
-            bottom: 40px;
-            z-index: 3;
-        }
-        .layer-4{
-            width: 100%;
-            height: 45%;
-            bottom: 0;
-            z-index: 4;
-        }
-    </style>
 </head>
 <body>
     <div id="container">
-        <!--Sun-->
-        <div class="layer layer-1"></div>
-        <!--Upper clouds-->
-        <div class="layer layer-2">
-                <div id="upcl-1" class="upper-clouds"></div>
-                <div id="upcl-2" class="upper-clouds"></div>
-                <div id="upcl-3" class="upper-clouds"></div>
-                <div id="upcl-4" class="upper-clouds"></div>
-                <div id="upcl-5" class="upper-clouds"></div>
-                <div id="upcl-6" class="upper-clouds"></div>
-
-            </div>
-        <!--Underneath clouds-->
-        <div class="layer layer-3">
-                <div class="under-clouds" id="uc1"></div>
-                <div class="under-clouds" id="uc2"></div>
-                <div class="under-clouds" id="uc3"></div>
-                <div class="under-clouds" id="uc4"></div>
-                <div class="under-clouds" id="uc5"></div>
-                <div class="under-clouds" id="uc6"></div>
-                <div class="under-clouds" id="uc7"></div>
-                <div class="under-clouds" id="uc8"></div>
-                <div class="under-clouds" id="uc9"></div>
-        </div>
-        <!-- Globes -->
-        <div class="layer layer-4">
-            <div class="globe">
-                <div class="ballon" id="globe1">
-                    <div class="canasta"></div>
-                </div>
-            </div>
-            <div class="globe" >
-                <div class="ballon" id="globe2">
-                    <div class="canasta"></div>
-                </div>
-            </div>
-            <div class="globe">
-                <div class="ballon" id="globe3">
-                    <div class="canasta"></div>
-                </div>
-            </div>
-            <div class="globe">
-                <div class="ballon" id="globe4">
-                    <div class="canasta"></div>
-                </div>
-            </div>
-        </div>
+        <!--The sun-->
+        <div class="layer-1"></div>
+        <!--Kinda lighting 1-->
+        <div class="layer-2"></div>
+        <!-- Kinda lighting 2-->
+        <div class="layer-3"></div>
+        <!--Cloud 1-->
+        <div class="layer-4"></div>
+        <!-- Ballon 1-->
+        <div class="layer-5"></div>
+        <!--Cloud 2-->
+        <div class="layer-6"></div>
+        <!--Cloud 3-->
+        <div class="layer-7"></div>
+        <!--Cloud 4-->
+        <div class="layer-8"></div>
+        <!--Ballon 2-->
+        <div class="layer-9"></div>
+        <!-- Cloud 5-->
+        <div class="layer-10"></div>
+        <!--Ballon 3-->
+        <div class="layer-11"></div>
+        <!--Great smiling face flying-->
+        <div class="layer-12"></div>
+        <!--Mountain right-->
+        <div class="layer-13"></div>
+        <!--Mountain center-->
+        <div class="layer-14"></div>
+        <!--Mountain left-->
+        <div class="layer-15"></div>
     </div>
 </body>
 </html>
