@@ -9,220 +9,290 @@ body{
     border: 8px solid black;
     border-radius: 35px;
     position: relative;
-    width: 800px;
-    height: 500px;
+    width: 1200px;
+    height: 800px;
     background-color: skyblue;
-    box-shadow: 0 0 13px 3px black;
-}
-.layer{
-    position:absolute;
+    box-shadow: 0 0 40px -20px black;
 }
 .layer-1{
-    border-radius: 50%;
-    background-color: yellow;
-    height: 25%;
-    width: 22%;
-    left: 24px;
-    top: 15px;
     z-index: 1;
+    position: absolute;
+    background: yellow;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    left: 44;
+    top: 30;
 }
 .layer-2{
-    width: 100%;
-    height: 19%;
-    top: 88px; 
     z-index: 2;
+    background-color: #c52525;
+    width: 50px;
+    height: 20px;
+    border-radius: 22px;
+    position: absolute;
+    left: 5;
+    top: 140;
 }
 .layer-3{
-    width: 100%;
-    height: 64%;
-    bottom: 40px;
     z-index: 3;
-}
-.layer-4{
-    width: 100%;
-    height: 45%;
-    bottom: 0;
-    z-index: 4;
-}
-
-
-
-
-
-
-/*Upper clouds*/
-.layer-1{
-    animation: clouding-reverse 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate;
-}
-.upper-clouds{
-    background: #ffffffb5;
-    border-radius: 75%;
-    width: 33%;
-    height: 33%;
+    background-color: #c52525;
+    width: 50px;
+    height: 20px;
+    border-radius: 22px;
     position: absolute;
-    animation-name: clouding-reverse;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    right: 5;
+    top: 140;
+    transform: rotate(9deg);
 }
-@keyframes clouding-reverse{
-    from{
-        transform: translate(0, 0);
-    }
-    to{
-        transform: translate(34px, 0);
-    }
+/*Clouds general styles*/
+.circle{
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+/*Ballon general styles*/
+.ballon div{
+    position: absolute;
+}
+.ball-1, .ball-2, .ball-3{
+    border-radius: 50%;
+}
+/*First cloud*/
+.layer-4{
+    z-index: 4;
+    top: 79;
+    left: 26%;
+    position: absolute;
+}
+.cloud-one-circle{
+    height: 40px;
+    width: 40px;
+}
+.cloud-one-circle#cloud-1{
+    left: 20;
+}
+.cloud-one-circle#cloud-2{
+    left: 1;
+    top: 20;
+}
+.cloud-one-circle#cloud-3{
+    left: 39;
+    top: 20;
 }
 
-/*First cloud*/
-#upcl-1{
-    bottom: 10;
-    left: 154;
+/*Second Cloud*/
+.layer-6{
+    z-index: 6;
+    position: absolute;
+    left: 46%;
+    top: 36%;
 }
-#upcl-2{
-    bottom: 10;
+.cloud-two-circle{
+    width: 78px;
+    height: 78px;
+}
+.cloud-two-circle#two-one{
+    left: 35;
+}
+.cloud-two-circle#two-two{
+    left: 0;
+    top: 56;
+}
+.cloud-two-circle#two-three{
+    left: 70;
+    top: 56;
+}
+/*Third Cloud*/
+.layer-7{
+    position:  absolute;
+    z-index: 7;
+    right: 90px;
+    top: 50%;
+}
+.cloud-three-circle{
+    height: 92px;
+    width: 93px;
+}
+.cloud-three-circle#three-one{
+    right: 44;
+    top: 2;
+}
+.cloud-three-circle#three-two{
+    right: 0;
+    top: 58;
+}
+.cloud-three-circle#three-three{
+    right: 88;
+    top: 58;
+}
+/*Fourth Cloud*/
+.layer-8{
+    z-index: 8;
+    position: absolute;
+    left: 3%;
+    top: 42%;
+}
+.cloud-four-circle{
+    height: 110px;
+    width: 110px;
+}
+.cloud-four-circle#four-one{
+    left: 50;
+}
+.cloud-four-circle#four-two{
+    left: 1;
+    top: 79;
+}
+.cloud-four-circle#four-three{
+    top: 79;
+    left: 100;
+}
+
+/*Fifth Cloud*/
+.layer-10{
+    z-index: 10;
+    position: absolute;
+    right: 440px;
+    top: 124px;
+}
+.cloud-five-circle{
+    width: 120px;
+    height: 120px;
+}
+.cloud-five-circle#five-one{
     left: 54;
 }
-#upcl-3{
-    bottom: 33;
-    left: 85;
+.cloud-five-circle#five-two{
+    top: 88px;
+    left: 1;
 }
-/*Second cloud*/
-#upcl-4{
-    right: 85;
-    bottom: 33;
-}
-#upcl-5{
-    right: 54;
-}
-#upcl-6{
-    right: 134;
+.cloud-five-circle#five-three{
+    top: 88;
+    left: 105;
 }
 
-
-/*Underneath clouds*/
-.under-clouds{
-    background: white;
-    border-radius: 50%;
-    width: 20%;
-    height: 20%;
+/*Great smiling face in a ball*/
+.layer-12{
+    z-index: 12;
     position: absolute;
-
-    animation-name: clouding;
-    animation-duration: 8s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
-    animation-iteration-count: infinite;
+    left: 2;
+    top: 201;
 }
-@keyframes clouding{
-    0%{
-        transform: translate(23px, 0)
-    }
-    25%{
-        transform: translate(0, -30px)
-    }
-    50%{
-        transform: translate(-90px, 60px)
-    }
-    75%{
-        transform: translate(-90px, -60px);
-    }
-    100%{
-        transform: translate(initial, initial);
-        transform: perspective(initial);
-        transform: skew(initial);
-    }
+.smiling-container{
+    border: 1px dashed #aaaaaa;
+    width: 300px;
+    height: 105px;
+    border-radius: 45%;
+    background-color: #cccccc;
+    transform: rotate(7deg);
+    box-shadow: 0px 0px 7px 1px #aaaaaa;
 }
-
-/*First cloud*/
-#uc1{
-    left: 58px;
-    top: 68px;
-}
-#uc2{
-    left: 78px;
-    top: 38px;
-}
-#uc3{
-    left:0px;
-    top: 44px;
-}
-/*Second Cloud*/
-#uc4{
-    bottom: 30;
-    right: 154px; 
-}
-#uc5{
-    bottom: 30;
-    right: 100px;
-}
-#uc6{
-    right: 126;
-    bottom: 50;
-}
-/*Third cloud*/
-#uc7{
-    left: 0;
-    right: 0;
-    margin: 60 auto;
-}
-#uc8{
-   top: 98px;
-   right: 248px;
-}
-#uc9{
-    bottom: 158;
-    left: 260;
-}
-
-/* Globes */
-.ballon{
+.great-ball-eyes{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: absolute; 
-    animation-name: globing;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-@keyframes globing{
-    from{
-        transform: translate(0, 0);
-    }
-    to{
-        transform: translate(-30px, -280px);
-    }
-
-}
-#globe1{
-    background-color: greenyellow;
-    top: 0; 
-    left: 27;
-}
-#globe2{
-    background-color: red;
-    top: 90;
-    right: 27;
-}
-#globe3{
-    left: 245;
-    top: 0;
-    background-color: green;
-}
-#globe4{
-    top: 9;
-    right: 178;
-    background: teal;
-}
-.canasta{
-    height: 34px;
-    width: 32px;
+    height: 8px;
+    width: 8px;
+    background-color: black;
     position: absolute;
-    bottom: -30;
-    background: brown;
-    left: 0;
-    right: 0;
+}
+#great-ball-eye-left{
+    left: 168;
+    top: 24;
+}
+#great-ball-eye-right{
+    top: 29;
+    right: 168;
+}
+.big-ball-smile{
+    border: 1px solid black;
+    width: 134px;
+    bottom: 32;
     margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 7px;
+    border-top: 0px;
+    border-radius: 100%;
+    position: absolute;
 }
+/* First Ballon */
+.layer-5{
+    z-index: 5;
+    position: absolute;
+    left: 23%;
+    top: 19%;
+}
+
+.ball-1{
+    height: 65px;
+    width: 65px;
+    background-color: red;
+}
+.cube-1{
+    top: 62;
+    left: 18.45;
+    height: 25px;
+    width: 25px;
+    border: 1px solid brown;
+    background-color: rgb(87, 12, 12);
+}
+/*Second Ballon*/
+.layer-9{
+    z-index: 9;
+    left: 37%;
+    top: 52%;
+    position: absolute;
+}
+.ball-2{
+    background-color: yellowgreen;
+    width: 120px;
+    height: 120px;
+}
+.cube-2{
+    height: 43px;
+    width: 54px;
+    background-color: orangered;
+    top: 116px;
+    left: 34px;
+}
+/* Third Ballon*/
+.layer-11{
+    z-index: 11;
+    position: absolute;
+    right: 334px;
+    top: 43%;
+}
+.ball-3{
+    height: 150px;
+    width: 150px;
+    background-color: darkslategrey;
+}
+.cube-3{
+    top: 145px;
+    left: 43;
+    width: 65px;
+    height: 55px;
+    background-color:rgb(87, 12, 12);
+}
+
+/****Elements without animation***/
+/*Mountains*/
+.mountain{
+    z-index: 13;
+    border: 3px solid black;
+    background: #36ff4e;
+    position: absolute;
+    border-radius: 14%;
+    width: 40%;
+    height: 190px;
+    bottom: -2;
+}
+.layer-13{
+    right: 0px;
+}
+.layer-14{
+    right: 340px;
+}
+.layer-15{
+    left: 0px;
+} 
