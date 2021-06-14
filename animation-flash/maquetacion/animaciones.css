@@ -1,0 +1,189 @@
+/*Animations here. Sample drawings: ./dibujos.css*/
+
+/*Sun moing. Layer 1 (z-index-1)*/
+@keyframes sun-moving {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translateX(922px);
+    }
+}
+/*Red thing 1*/
+@keyframes red-thing-1 {
+    0%{
+        visibility: initial;
+    }
+    33%{
+        transform: rotate(50deg);
+    }
+    66%{
+        transform: translateX(845px, 350px);
+    }
+    100%{
+        transform: translate(959px, 516px);
+    }
+}
+/*Red thing 1*/
+
+@keyframes red-thing-2 {
+    0%{
+        visibility: initial;
+    }
+    33%{
+        transform: rotate(-50deg);
+    }
+    66%{
+        transform: translateX(-845px, 350px);
+    }
+    100%{
+        transform: translate(-959px, 516px);
+    }
+}
+/*Clouds*/
+@keyframes cloud-1 {
+    0%{
+        transform: translate(0);
+    }
+    15%{
+        transform: translateX(290px)
+    }
+    25%{
+        transform: translate(590px, 87px);
+    }
+    35%{
+        transform: translate(665px, 109px);
+    }
+    50%{
+        transform: translate(450px, 134px);
+    }
+    75%{
+        transform: translate(324, 58px);
+    }
+}
+@keyframes cloud-2 {
+    0%{
+        transform: translate(0);
+    }
+    10%{
+        transform: translateX(-125px)
+    }
+    20%{
+        transform: translate(-200px, 12px);
+    }
+    30%{
+        transform: translate(0, 109px);
+    }
+    50%{
+        transform: translate(490px, 0);
+    }
+    75%{
+        transform: translate(354, 58px);
+    }
+}
+@keyframes cloud-3 {
+    0%{
+        transform: translate(0);
+    }
+    10%{
+        transform: translate(30px);
+    }
+    25%{
+        transform: translate(-30px, -12px);
+    }
+    50%{
+        transform: translate(-230px, -98px);
+    }
+    75%{
+        transform: translate(74px, -12px);
+    }
+}
+@keyframes cloud-4 {
+    0%{
+        transform: translate(0);
+    }
+    10%{
+        transform: translate(250px);
+    }
+    30%{
+        transform: translate(600px, -12px);
+    }
+    50%{
+        transform: translate(230px, -98px);
+    }
+    80%{
+        transform: translate(74px, -12px);
+    }
+}
+@keyframes cloud-5 {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    55%{
+        transform: translateX(-230px);
+    }
+    75%{
+        transform: translateX(-74px);
+    }
+}
+/*Great potato flying*/
+@keyframes potato-flying {
+    from{
+        transform: translate(0, 0);
+    }
+    15%{
+        transform: rotate(34deg);
+    }
+    30%{
+        transform: translate(276px, 298px)
+    }
+    65%{
+        transform: translate(678px, 298px);
+    }
+    to{
+        transform: translate(700px, 415px);
+    }
+}
+/*Ballons*/
+@keyframes ballon-1{
+    from{
+        transform: translate(0);
+    }
+    30%{
+        transform: translateY(428px);
+    }
+    40%{
+        transform: translate(378px, 428px);    
+    }
+    75%{
+        transform: translate(360px, -43px);
+    }
+}
+@keyframes ballon-2{
+    from{
+        transform: translate(0);
+    }
+    30%{
+        transform: translateY(58px);
+    }
+    70%{
+        transform: translate(38px, -148px);    
+    }
+    75%{
+        transform: translate(30px, -43px);
+    }
+}
+@keyframes ballon-3{
+    from{
+        transform: translate(0);
+    }
+    40%{
+        transform: translateY(-230px);
+    }
+    75%{
+        transform: translate(-130px, -43px);
+    }
+}

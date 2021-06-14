@@ -3,20 +3,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter test with CSS</title>
     <style>
-        body{
-            counter-reset: game;
-        }
-        input:checked{
-            counter-increment: game;
-        }
-        .total-count::after{/*Needs to be with a pseudo element*/
-            content: counter(game);
-        }
+      body{
+    counter-reset: game;
+    }
+    input:checked{
+        counter-increment: game;
+    }
+    .total-count::after{/*Needs to be with a pseudo element*/
+        content: counter(game);
+}
     </style>
 </head>
 <body>
+    <!--This is nothing relevant to the project. It is just an example of how the counters work and a file to test them-->
     <ul>
         <li><input type="checkbox"><div class="shield"></div></li>
         <li><input type="checkbox"><div class="shield"></div></li>

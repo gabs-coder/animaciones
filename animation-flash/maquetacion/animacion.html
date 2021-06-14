@@ -3,76 +3,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apilando cosas</title>
+    <title>Apilando cosas y moviendolas</title>
     <link rel="stylesheet" href="./dibujos.css">
+    <link rel="stylesheet" href="./animaciones.css">
+    <link rel="stylesheet" href="./contador.css">
 </head>
 <body>
+    <h1>There are 15 things moving right bellow. Can you click on everyone of them?</h1>
+    <blockquote> You will have to click in every of them to win. Your score will be shown in the left-top corner. The highest score is 15</blockquote>    
     <div id="container">
         <!--The sun-->
-        <div class="layer-1"></div>
+        <div class="layer-1">
+            <input type="checkbox">
+        </div>
         <!--Kinda lighting 1-->
-        <div class="layer-2"></div>
+        <div class="layer-2">
+            <input type="checkbox">
+        </div>
         <!-- Kinda lighting 2-->
-        <div class="layer-3"></div>
+        <div class="layer-3">
+            <input type="checkbox">
+        </div>
         <!--Cloud 1-->
         <div class="layer-4">
             <div class="cloud-one-circle circle" id="cloud-1"></div>
-            <div class="cloud-one-circle circle" id="cloud-2"></div>
+            <div class="cloud-one-circle circle" id="cloud-2"><input type="checkbox"></div>
             <div class="cloud-one-circle circle" id="cloud-3"></div>
         </div>
         <!-- Ballon 1-->
         <div class="layer-5 ballon">
-            <div class="ball-1"></div>
+            <div class="ball-1">
+                <input type="checkbox">
+            </div>
             <div class="cube-1"></div>
         </div>
         <!--Cloud 2-->
         <div class="layer-6">
-            <div class="cloud-two-circle circle" id="two-one"></div>
+            <div class="cloud-two-circle circle" id="two-one">
+                <input type="checkbox">
+            </div>
             <div class="cloud-two-circle circle" id="two-two"></div>
             <div class="cloud-two-circle circle" id="two-three"></div>
         </div>
         <!--Cloud 3-->
         <div class="layer-7">
             <div class="cloud-three-circle circle" id="three-one"></div>
-            <div class="cloud-three-circle circle" id="three-two"></div>
+            <div class="cloud-three-circle circle" id="three-two">
+                <input type="checkbox">
+            </div>
             <div class="cloud-three-circle circle" id="three-three"></div>
         </div>
+        <!--Ballon 2-->
+        <div class="layer-8 ballon">
+            <div class="ball-2">
+                <input type="checkbox">
+            </div>
+            <div class="cube-2"></div>
+        </div>
         <!--Cloud 4-->
-        <div class="layer-8">
+        <div class="layer-9">
             <div class="cloud-four-circle circle" id="four-one"></div>
             <div class="cloud-four-circle circle" id="four-two"></div>
-            <div class="cloud-four-circle circle" id="four-three"></div>
-        </div>
-        <!--Ballon 2-->
-        <div class="layer-9 ballon">
-            <div class="ball-2"></div>
-            <div class="cube-2"></div>
+            <div class="cloud-four-circle circle" id="four-three">
+                <input type="checkbox">
+            </div>
         </div>
         <!-- Cloud 5-->
         <div class="layer-10">
             <div class="cloud-five-circle circle" id="five-one"></div>
             <div class="cloud-five-circle circle" id="five-two"></div>
-            <div class="cloud-five-circle circle" id="five-three"></div>
+            <div class="cloud-five-circle circle" id="five-three">         
+            <input type="checkbox">
+            </div>
         </div>
         <!--Ballon 3-->
         <div class="layer-11 ballon">
-            <div class="ball-3"></div>
+            <div class="ball-3">
+                <input type="checkbox">
+            </div>
             <div class="cube-3"></div>
         </div>
         <!--Great smiling face flying-->
         <div class="layer-12">
             <div class="smiling-container">
+                <input type="checkbox">
                 <div class="great-ball-eyes" id="great-ball-eye-left"></div>
                 <div class="great-ball-eyes" id="great-ball-eye-right"></div>
                 <div class="big-ball-smile"></div>
             </div>
         </div>
         <!--Mountain right-->
-        <div class="layer-13 mountain"></div>
+        <div class="layer-13 mountain">
+            <input type="checkbox">
+        </div>
         <!--Mountain center-->
-        <div class="layer-14 mountain"></div>
+        <div class="layer-14 mountain">
+            <input type="checkbox">
+        </div>
         <!--Mountain left-->
-        <div class="layer-15 mountain"></div>
+        <div class="layer-15 mountain">
+            <input type="checkbox">
+        </div>
+        <h3 class="counter-score">
+            Total Score: 
+        </h3>
     </div>
 </body>
 </html>

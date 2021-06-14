@@ -23,6 +23,7 @@ body{
     border-radius: 50%;
     left: 44;
     top: 30;
+    animation: sun-moving 25s linear 3s infinite alternate;
 }
 .layer-2{
     z-index: 2;
@@ -33,6 +34,7 @@ body{
     position: absolute;
     left: 5;
     top: 140;
+    animation: red-thing-1 4s linear 400ms infinite alternate;
 }
 .layer-3{
     z-index: 3;
@@ -44,12 +46,14 @@ body{
     right: 5;
     top: 140;
     transform: rotate(9deg);
+    animation: red-thing-2 4s linear 400ms infinite alternate;
 }
 /*Clouds general styles*/
 .circle{
     border-radius: 50%;
     background-color: white;
     position: absolute;
+    border: 1px solid #cccccc;
 }
 /*Ballon general styles*/
 .ballon div{
@@ -64,6 +68,7 @@ body{
     top: 79;
     left: 26%;
     position: absolute;
+    animation: cloud-1 36s ease-in 1s infinite normal;
 }
 .cloud-one-circle{
     height: 40px;
@@ -87,6 +92,7 @@ body{
     position: absolute;
     left: 46%;
     top: 36%;
+    animation: cloud-2 36s ease-in 1s infinite normal;
 }
 .cloud-two-circle{
     width: 78px;
@@ -109,6 +115,7 @@ body{
     z-index: 7;
     right: 90px;
     top: 50%;
+    animation: cloud-3 36s ease-in 1s infinite normal;
 }
 .cloud-three-circle{
     height: 92px;
@@ -129,9 +136,10 @@ body{
 /*Fourth Cloud*/
 .layer-8{
     z-index: 8;
+    left: 37%;
+    top: 52%;
     position: absolute;
-    left: 3%;
-    top: 42%;
+    animation: ballon-2 36s linear infinite alternate;
 }
 .cloud-four-circle{
     height: 110px;
@@ -155,6 +163,7 @@ body{
     position: absolute;
     right: 440px;
     top: 124px;
+    animation: cloud-5 36s ease-out 1s infinite normal forwards;
 }
 .cloud-five-circle{
     width: 120px;
@@ -178,6 +187,7 @@ body{
     position: absolute;
     left: 2;
     top: 201;
+    animation: potato-flying 8s cubic-bezier(1, 0, 0, 1) 400ms infinite alternate;
 }
 .smiling-container{
     border: 1px dashed #aaaaaa;
@@ -221,6 +231,7 @@ body{
     position: absolute;
     left: 23%;
     top: 19%;
+    animation: ballon-1 36s linear infinite alternate;
 }
 
 .ball-1{
@@ -239,9 +250,10 @@ body{
 /*Second Ballon*/
 .layer-9{
     z-index: 9;
-    left: 37%;
-    top: 52%;
     position: absolute;
+    left: 3%;
+    top: 42%;
+    animation: cloud-4 36s ease-out 1s infinite normal;
 }
 .ball-2{
     background-color: yellowgreen;
@@ -261,6 +273,7 @@ body{
     position: absolute;
     right: 334px;
     top: 43%;
+    animation: ballon-3 36s linear infinite alternate;
 }
 .ball-3{
     height: 150px;

@@ -1,0 +1,15 @@
+#container{
+    counter-reset: game;
+}
+input:checked{
+    counter-increment: game;
+}
+input[type=checkbox]{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.counter-score::after{/*Needs to be with a pseudo element*/
+    content: counter(game);
+}
