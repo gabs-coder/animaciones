@@ -3,99 +3,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-        }
-        .parallax-container{
-            width: 100%;
-            height: 100vh;
-            perspective: 8px;
-            position: relative;
-            perspective-origin: 50%;
-            overflow-x: hidden;
-            overflow-y: scroll;
-        }
-        .capa{
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-        }
-        .capa_background{
-            width: 100%;
-            height: auto;
-            transform: translateZ(0px) scale(1);
-            transform-origin: 0 50%;
-        }
-        .capa_middle{
-            width: 100%;
-            height: 100%;
-            transform: translateZ(5px) scale(0.375);
-            transform-origin: 50%;
-        }
-        .capa_fg{
-            transform: translateZ(2px) scale(0.75);
-            transform-origin: top;
-        }
-
-        .card{
-            width: 100px;
-            height: 78px;
-            background: red;
-            border-radius: 2px;
-            position: absolute;
-            transform: rotate(40px);
-        }
-        .one{
-            left: 22px;
-            right: 123px;
-            bottom: -123px;
-
-        }
-        .two{
-            bottom: -98px;
-            right: 90px;
-        }
-        .three{
-            bottom: -7px;
-            right: 2px;
-        }
-        .lleno{
-            height: 23px;
-        }
-    </style>
+    <title>Parallax 😎 </title>
+    <link rel="stylesheet" href="./utils/parallax.css">
 </head>
 <body>
     <div class="parallax-container">
-        <div class="capa capa_background">
-            <img
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcQqNfomTgfE4LG9QI1XSd2XaVnr9EUTzRA&usqp=CAU" alt="fueguitp" width="100%" height="1000px">
+        <div class="image image__background">
+            <img width="100%" 
+            src="https://i.pinimg.com/originals/a8/78/63/a878634b0cb8f4cc88eae814c707ebc7.png" alt="Infinite Space">
         </div>
-        <div class="capa capa_middle">
+        <div class="image image__middle">
             <div class="card one"></div>
             <div class="card two"></div>
             <div class="card three"></div>
         </div>
-        <div class="capa capa_fg">
-            <img 
-            src="https://files.adventistas.org/feliz7play/sites/4/2017/10/Original_Perfil_EB.jpg" 
-            alt="escarabajo-binario" width="100%" height="1000px">
+        <div class="image image__foreground">
+            <img src="https://i.pinimg.com/originals/f7/d3/ee/f7d3ee4966dad6e4f6bc8e682abe44e9.jpg" 
+             width="100%" alt="Solar-system image">
         </div>
-        <div class="lleno">
-
-        </div>
-        <div class="lleno">
-            
-        </div>
-        <div class="lleno">
-            
-        </div>
-        <div class="lleno">
-            
-        </div>
-
-    </div>    
+    </div>  
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel, debitis vitae tempore dignissimos maiores ab officia placeat quasi eligendi beatae molestiae dolor nulla eaque numquam asperiores odit deserunt tempora!
+    </p>
 </body>
 </html>
