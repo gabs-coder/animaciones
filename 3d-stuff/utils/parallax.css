@@ -5,54 +5,86 @@ body{
     width: 100%;
     height: 100vh;
     perspective: 8px;
-    perspective-origin: 50%;
     overflow-x: hidden;
-    overflow-y: scroll;
     position: relative;
 }
-.image{
+.capa{
     position: absolute;
-    left: 0;
-    right: 0; 
-    margin: 0 auto;
-}
-.image__background{
-    transform: translateZ(0) scale(1);
-}
-.image__middle{
+    width: 100%;
     height: 100%;
-    width: 100%;
-    transform: translateZ(4px) scale(0.5);
-    transform-origin: bottom;
-}
-.image__foreground{
     transform-origin: 50%;
-    transform: translateZ(5px) scale(0.375);
 }
-.card{
-    background: red;
-    border-radius: 12px 0 13px 0;
-    height: 90px;
-    width: 100%;
+#background{
+    background-color: #d33c3c;
+    height: 100%;
+    z-index: 1;
+    transform: translateZ(0px) scale(1px);
+}
+#middleground{
+    z-index: 2;
+    transform-origin: 59%;
+    transform: translateZ(2px) scale(0.75); 
+}
+#middleground .card{
+    width: 100px;
+    height: 120px;
     position: absolute;
+    border-radius: 7px;
+    background-color: white;
 }
-.card p{
-    color: transparent;
-    font-size: 2em;
+#card1{
+    top: 30px;
+    left: 56px;
+}
+#card2{
+    top: 43%;
+    rigth: 10%;
+}
+#card3{
+    bottom: 100px;
+    right: 12%;
+}
+#foreground{
+    z-index: 3;
+    transform-origin: 50%;
+    transform: translateZ(4px) scale(0.5);
+}
+#foreground #parragraph-container{
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    top: 50%;
+    position: absolute;
+    animation: parragraph-appear 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes parragraph-appear{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+#foreground #title-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: green;
     font-family: sans-serif;
+    font-size: 1.5em;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: title-getting-in 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
 }
-.card:hover{
-    transform: rotate(213deg);
-}
-.one{
-    left: 330;
-    top: 40;
-}
-.two{
-    right: 420;
-    top: 910;
-}
-.three{
-    left: 65;
-    top: 120;
+@keyframes title-getting-in {
+    from{
+        transform: translateY(-120px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

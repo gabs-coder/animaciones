@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="./utils/parallax.css">
 </head>
 <body>
-    <div class="parallax-container">
-        <div class="image image__background">
-            <img width="100%" height="100%"
-            src="https://i.ibb.co/jbLKgvX/Background.png" alt="Infinite Space">
-        </div>
-        <div class="image image__middle">
-            <div class="card one">
-                <p>This is a parragraph</p>
+    <main>
+        <div class="parallax-container">
+            <div id="background" class="capa"></div>
+            <div id="middleground" class="capa">
+                <div class="card" id="card1"></div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
             </div>
-            <div class="card two">
-                <p>Designing with Gabo</p>
-            </div>
-            <div class="card three">
-                <p>I've been trying to find a home</p>
+            <div id="foreground" class="capa">
+                <div id="title-container">
+                    <h1> Parallax</h1>
+                </div>
+                <div id="parragraph-container">
+                    <p>So I`ll step out the way, I´ll give you center stage.
+                        All right, spot light, give em what they came for...
+                    </p>
+                </div>    
             </div>
         </div>
-        <div class="image image__foreground">
-            <img src="https://i.ibb.co/vJdbRkj/Alice.png" 
-             width="100%" height="100%" alt="Solar-system image">
-        </div>
-    </div> 
+        <section class="not-parallax">
+            <h1>
+                This was a parallax
+            </h1>
+            <p>What´s a parallax. It is an effect that makes you 
+                feel as if something relying on a 2-dimensional base
+                was an actual 3d picture.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
