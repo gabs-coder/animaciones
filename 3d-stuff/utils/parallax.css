@@ -29,7 +29,7 @@ body{
     border-radius: 7px;
     background-color: white;
     padding: 30px;
-    margin: 21%;
+    margin: 6%;
     font-family: sans-serif;
 }
 #middleground .card #form-title{
@@ -43,38 +43,17 @@ body{
     height: 30px;
     border: 1px solid green;
 }
-.foreground div{
-    z-index: 2;
-    transform-origin: 50%;
-    transform: translateZ(-8px) scale(1.75);
-}
 
-.foreground #parragraph-container{
-    animation: parragraph-appear 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+/*Otros estilos*/
+
+#title-container{
+    animation: title-getting-in 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms forwards;
 }
-.foreground #parragraph-container p{
-    padding: 40px;
-    color: grey;
-    font-family: Arial, sans-serif;
-    font-size: 2.5em;
-    position: absolute;
-}
-@keyframes parragraph-appear{
-    from{
-        transform: translateX(-300px);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-.foreground #title-container{
-    animation: title-getting-in 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
-}
-.foreground #title-container h1{
+#title-container h1{
     text-align: center;
     color: rgb(74, 212, 196);
     font-family: sans-serif;
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
 @keyframes title-getting-in {
     from{
@@ -84,13 +63,32 @@ body{
     to{
         opacity: 1;
         transform: translateY(0);
+        transform: translateZ(-8px) scale(1.75);
+
+    }
+}
+#parragraph-container{
+    position: absolute;
+    bottom: -100;
+    padding: 40px;
+    transform-origin: 50%; 
+    animation: parragraph-appear 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#parragraph-container p{
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+}
+@keyframes parragraph-appear{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+        transform: translateZ(-8px) scale(1.75);
     }
 }
 
-/*Other code*/
-.stuff{
-    width: 230px;
-    color: yellow;
-    height: 160px;
-    padding: 20px;
+section#image-representative{
+    bottom: 0;
 }
