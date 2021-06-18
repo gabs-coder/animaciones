@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+/*All parallax styles*/
 .parallax-container{
     width: 100%;
     height: 100%;
@@ -10,17 +11,17 @@ body{
     background-color: #c6e1e7cf;
     z-index: 1;
 }
-.capa{
+/*Estilos del contenedor del card e imagen*/
+#middleground{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
     position: absolute;
     width: 100%;
     height: 100%;
     transform-origin: 50%;
 }
-#middleground{
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-}
+/*Card en especifico*/
 #middleground .card{
     transform-origin: 50%;
     width: 400px;
@@ -32,28 +33,26 @@ body{
     margin: 6%;
     font-family: sans-serif;
 }
+/*Titulo: Suscribete*/
 #middleground .card #form-title{
     font-size: 2em;
     text-align: center;
     color:rgb(235, 130, 217);
     margin: 0 auto;
 }
+/*Cada input*/
 #middleground .card #form-container .form-item input{
     width: 89%;
     height: 30px;
     border: 1px solid green;
 }
 
-/*Otros estilos*/
 
+/*** TEXTOS. Contienen animaciones y efecto parallax*/
+
+/*Contenedor del titulo-->Contiene la animacion*/
 #title-container{
     animation: title-getting-in 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms forwards;
-}
-#title-container h1{
-    text-align: center;
-    color: rgb(74, 212, 196);
-    font-family: sans-serif;
-    font-size: 4.5em;
 }
 @keyframes title-getting-in {
     from{
@@ -67,10 +66,18 @@ body{
 
     }
 }
+/*Título en sí --> Quienes somos nosotros*/
+#title-container h1{
+    text-align: center;
+    color: rgb(74, 212, 196);
+    font-family: sans-serif;
+    font-size: 4.5em;
+}
+
+/**/
 #parragraph-container{
     position: absolute;
     bottom: -100;
-    padding: 40px;
     transform-origin: 50%; 
     animation: parragraph-appear 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
@@ -83,12 +90,16 @@ body{
     from{
         transform: translateX(-300px);
     }
+    50%{
+        transform: translateX(40px);
+    }
     to{
-        transform: translateX(0);
-        transform: translateZ(-8px) scale(1.75);
+        transform: translateZ(-8px) scale(1.85);
     }
 }
 
-section#image-representative{
+div#image-representative{
     bottom: 0;
+    position: absolute;
+    margin: -26%;
 }
