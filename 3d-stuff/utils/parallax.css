@@ -13,7 +13,7 @@ body{
 }
 /*Estilos del contenedor del card e imagen*/
 #middleground{
-    z-index: 3;
+    z-index: 2;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -25,33 +25,65 @@ body{
 #middleground .card{
     transform-origin: 50%;
     width: 400px;
-    height: 520px;
     position: absolute;
     border-radius: 7px;
-    background-color: white;
+    background-color: #ebf4f6cf;
     padding: 30px;
-    margin: 6%;
+    margin: 16%;
     font-family: sans-serif;
 }
 /*Titulo: Suscribete*/
 #middleground .card #form-title{
     font-size: 2em;
     text-align: center;
-    color:rgb(235, 130, 217);
+    color:rgb(173, 59, 69);
     margin: 0 auto;
+}
+/*Cada titulo de los inputs*/
+#middleground .card #form-container .form-item h2{
+    margin: 18px 0 4px;
+    font-size: 1.2em;
 }
 /*Cada input*/
 #middleground .card #form-container .form-item input{
     width: 89%;
-    height: 30px;
+    height: 42px;
     border: 1px solid green;
 }
-
+/*Card enviar*/
+#middleground .card #form-submit-button{
+    margin: 20px;
+    padding: 17px;
+    display: flex;
+    justify-content: center;
+}
+/*Estilos boton*/
+#middleground .card #form-submit-button button{
+    border: 1px solid #638525;
+    padding: 7px;
+    background-color: #33e633;
+    border-radius: 3px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.2);
+}
 
 /*** TEXTOS. Contienen animaciones y efecto parallax*/
-
+.texts#title-container{
+    z-index: 3;
+}
+.texts#parragraph-container{
+    z-index: 4;
+}
 /*Contenedor del titulo-->Contiene la animacion*/
 #title-container{
+    width: 100%;
+    position: absolute;
+    top: -19%;
+    left: 0;
+    right: 0;
     animation: title-getting-in 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms forwards;
 }
 @keyframes title-getting-in {
@@ -59,32 +91,41 @@ body{
         transform: translateY(-120px);
         opacity: 0;
     }
+    50%{
+        opacity: 0.5;
+    }
     to{
         opacity: 1;
         transform: translateY(0);
-        transform: translateZ(-8px) scale(1.75);
-
+        transform: translateZ(-5px) scale(1.625);
     }
 }
-/*Título en sí --> Quienes somos nosotros*/
+/*Título en sí -->Toma tu más valiosa decisión y suscríbete*/
 #title-container h1{
-    text-align: center;
-    color: rgb(74, 212, 196);
+    margin: 0 auto; /*Esta*/
+    width: 88%; /*Y esta propiedad son para centrar el elemento con el párrafo de abajo*/
+    color: rgb(53, 138, 128);
     font-family: sans-serif;
-    font-size: 4.5em;
+    font-size: 5.5em;
+    text-align: center;
 }
 
-/**/
+/*Contenedor del parrafo -> Ubicación y animación*/
 #parragraph-container{
     position: absolute;
-    bottom: -100;
+    bottom: -64%;
     transform-origin: 50%; 
-    animation: parragraph-appear 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: parragraph-appear 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    width: 100%;
 }
+/*Párrafo en sí -> Lorem Ipsum*/
 #parragraph-container p{
-    color: grey;
+    color: #ffffff;
+    margin: 0 auto; /*Esta*/
+    width: 88%; /*Y esta propiedad son para centrarlo y que se ubique como el titulo arriba*/
     font-family: Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 2.9em;
+    padding: 67px;
 }
 @keyframes parragraph-appear{
     from{
@@ -94,12 +135,6 @@ body{
         transform: translateX(40px);
     }
     to{
-        transform: translateZ(-8px) scale(1.85);
+        transform: translateZ(-5px) scale(1.625);
     }
-}
-
-div#image-representative{
-    bottom: 0;
-    position: absolute;
-    margin: -26%;
 }
