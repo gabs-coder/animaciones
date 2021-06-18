@@ -57,7 +57,7 @@ body{
     display: flex;
     justify-content: center;
 }
-/*Estilos boton*/
+/*Estilos boton de enviar*/
 #middleground .card #form-submit-button button{
     border: 1px solid #638525;
     padding: 7px;
