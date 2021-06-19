@@ -13,7 +13,7 @@ body{
 }
 /*Estilos del contenedor del card e imagen*/
 #middleground{
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -27,7 +27,7 @@ body{
     width: 400px;
     position: absolute;
     border-radius: 7px;
-    background-color: #ebf4f6cf;
+    background-color: #ebf4f6d6;
     padding: 30px;
     margin: 16%;
     font-family: sans-serif;
@@ -71,11 +71,11 @@ body{
 }
 
 /*** TEXTOS. Contienen animaciones y efecto parallax*/
-.texts#title-container{
-    z-index: 3;
-}
-.texts#parragraph-container{
+#title-container{
     z-index: 4;
+}
+#parragraph-container{
+    z-index: 2;
 }
 /*Contenedor del titulo-->Contiene la animacion*/
 #title-container{
