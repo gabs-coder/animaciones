@@ -37,17 +37,20 @@
         padding: 6px;
     }
     /*Estilos externos al card de suscripcion (TEXTOS)*/
+    /*Etilos del contenedor del Título*/
     div#title-container{
         top: -13%;
     }
+    /*Título en sí*/
     div#title-container h1{
         width: 90%;
         font-size: 3em;
     }
-
+    /*Contenedor del párrafo descriptivo*/
     div#parragraph-container{
         bottom: -56%;
     }
+    /*Párrafo descriptivo*/
     div#parragraph-container p{
         width: 90%;
         font-size: 1.55em;
@@ -55,8 +58,65 @@
     }
 }
 
-
+ 
 /***DISPOSITIVOS COMO TABLETS**/
-@media (min-widht: 560px) and (max-width: 970px) {
-    
-}
+
+@media (min-width: 615px) and (max-width: 970px) {
+   /***Estilos para el card de suscripcion*/
+    /*Card en especifico*/
+    div#middleground .card{
+        padding: 9px;
+        width: 350px;
+        margin: 12%;
+        margin-top: 16%;
+    }
+    /*Titulo: Suscribete*/
+    #middleground .card div#form-title{
+        font-size: 1.2em;
+    }
+    /*Este es para centrar el input y su titulo*/
+    div#middleground .card #form-container .form-item{
+        margin: 0 auto;
+        width: 90%;
+    }
+    /*Titulo de cada input*/
+    div#middleground .card #form-container .form-item h2{
+        margin: 12px 0 4px;
+        font-size: 1.15em;
+    }
+    /*Inputs*/
+    div#middleground .card #form-container .form-item input{
+        height: 29px;
+    }
+    /*Card enviar*/
+    div#middleground .card #form-submit-button{
+        margin: 13px;
+        padding: 0; 
+        margin-top: 22px;       
+    }
+    /*Estilos boton de enivar*/
+    #middleground .card #form-submit-button button{
+        font-size: 1em;
+        padding: 3px;
+    }
+    /*Estilos externos al card de suscripcion (TEXTOS)*/
+    /*Etilos del contenedor del Título*/
+    div#title-container{
+        top: -23%;
+    }
+    /*Título en sí*/
+    div#title-container h1{
+        width: 90%;
+        font-size: 2.4em;
+    }
+    /*Contenedor del párrafo descriptivo*/
+    div#parragraph-container{
+        bottom: -60%;
+    }
+    /*Párrafo descriptivo*/
+    div#parragraph-container p{
+        width: 90%;
+        font-size: 1.35em;
+        padding: 7px;
+    }
+} 
