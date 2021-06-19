@@ -61,7 +61,7 @@
  
 /***DISPOSITIVOS COMO TABLETS**/
 
-@media (min-width: 615px) and (max-width: 970px) {
+@media (min-width: 615px) and (max-width: 979px) {
    /***Estilos para el card de suscripcion*/
     /*Card en especifico*/
     div#middleground .card{
@@ -124,11 +124,87 @@
 /***Estilos para celulares**/
 /*Vamos a quitar las animaciones puesto que no son buenas para UX en un dispositivo movil*/
 @media (max-width: 614px) {
-    /*Quitar animaciones*/
-
-    /*Verificar sí se puede mantener el efecto 
-        parallax en celular de una manera agradable
-        y mantenerlo (sí posible, fuera de los keyframes de la animacion)
-        Mirar documentacion en MDN y otros lugares para verificar
-    */
+    /***Quitar animaciones*/
+    div#title-container, div#parragraph-container{
+        animation-duration: 0s;
+    }
+    /***Preservando efecto parallax*/
+    .parallax-container{
+        perspective: 9px;
+    }
+    div#title-container, div#parragraph-container{
+        transform: translateZ(-4px) scale(1.4443);
+    }
+     
+    /***Tamaños de fuentes y contenedores*/
+    body{
+        height: 100vh;
+    }
+    /*Estilos para el card de suscripcion*/
+    /*Card en especifico*/
+    div#middleground .card{
+        padding: 9px;
+        width: 275px;
+        margin: 11%;
+        height: 280px;
+        margin-top: 27%;
+    }
+    /*Titulo: Suscribete*/
+    #middleground .card div#form-title{
+        font-size: .9em;
+        margin-top: 0;
+        padding-top: 3px;
+    }
+    #middleground .card div#form-title h1{
+        margin: 0;
+    }
+    /*Este es para centrar el input y su titulo*/
+    div#middleground .card #form-container .form-item{
+        margin: 0 auto;
+        width: 100%;
+    }
+    /*Titulo de cada input*/
+    div#middleground .card #form-container .form-item h2{
+        margin: 10px 0 4px;
+        font-size: .95em;
+    }
+    /*Inputs*/
+    div#middleground .card #form-container .form-item input{
+        height: 23px;
+    }
+    /*Card enviar*/
+    div#middleground .card #form-submit-button{
+        margin: 12px;
+        padding: 0; 
+        margin-top: 20px;       
+    }
+    /*Estilos boton de enivar*/
+    #middleground .card #form-submit-button button{
+        font-size: .6em;
+        padding: 3px;
+    }
+    /*Estilos externos al card de suscripcion (TEXTOS)*/
+    /*Etilos del contenedor del Título*/
+    div#title-container{
+        top: -26%;
+        padding: 7px;
+        background-color: #c6e1e7;
+    }
+    /*Título en sí*/
+    div#title-container h1{
+        width: 90%;
+        font-size: 1.8em;
+    }
+    /*Contenedor del párrafo descriptivo*/
+    div#parragraph-container{
+        bottom: -90%;
+        margin: 0;
+    }
+    /*Párrafo descriptivo*/
+    div#parragraph-container p{
+        width: 90%;
+        font-size: 1.25em;
+        padding: 7px;
+        margin-top: 75px;
+    }
 }
