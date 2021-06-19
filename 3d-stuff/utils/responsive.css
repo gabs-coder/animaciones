@@ -124,7 +124,7 @@
 /***Estilos para celulares**/
 /*Vamos a quitar las animaciones puesto que no son buenas para UX en un dispositivo movil*/
 @media (max-width: 614px) {
-    /***Quitar animaciones*/
+    /*** *Quitar animaciones */
     div#title-container, div#parragraph-container{
         animation-duration: 0s;
     }
@@ -193,7 +193,7 @@
     /*Título en sí*/
     div#title-container h1{
         width: 90%;
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
     /*Contenedor del párrafo descriptivo*/
     div#parragraph-container{
@@ -205,6 +205,6 @@
         width: 90%;
         font-size: 1.25em;
         padding: 7px;
-        margin-top: 75px;
+        margin-top: 20px;
     }
 }
